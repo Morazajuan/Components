@@ -2,7 +2,7 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { MemberService } from '../member.service';
 
 
-
+ 
 
 @Component({
   selector: 'app-slide-show',
@@ -10,7 +10,7 @@ import { MemberService } from '../member.service';
   styleUrls: ['./slide-show.component.css'],
   providers: [MemberService]
 })
-
+ 
 
 
 export class SlideShowComponent implements OnInit {
@@ -21,6 +21,38 @@ export class SlideShowComponent implements OnInit {
   public count  = 0;
   public index  = 0;
 
+
+  // ID Card data Members
+  public name;
+  public ID;
+  public dependents;
+  public groupNo;
+  public bin;
+  public benPla;
+  public effDate;
+  public plan;
+  public ov;
+  public sc;
+  public emergency;
+  public dedu;
+
+
+  updateCard(){
+    this.name = this.members[this.index].name
+    this.ID = this.members[this.index].id
+    this.dependents = this.members[this.index].dependents
+    this.groupNo = this.members[this.index].groupNo
+    this.bin = this.members[this.index].bin
+    this.benPla = this.members[this.index].benPla
+    this.effDate = this.members[this.index].effDate
+    this.plan = this.members[this.index].plan
+    this.ov = this.members[this.index].ov
+    this.sc = this.members[this.index].sc
+    this.emergency = this.members[this.index].emergency
+    this.dedu = this.members[this.index].dedu
+
+
+  }
 
   constructor(private _memberService: MemberService){}
 
@@ -34,7 +66,7 @@ export class SlideShowComponent implements OnInit {
         this.count = Object.keys(this.members).length;
 
         console.log("Members JSON size: "+this.count);
-
+        this.updateCard()
       });
       
 
@@ -49,16 +81,58 @@ prevBtn(){
 if(this.index>0)
   this.index-=1;
 
+  this.updateCard()
 
   console.log(this.index);
 }
 
 nextBtn(){
-if(this.index < this.count)
+if(this.index < this.count-1)
   this.index+=1;
+  this.updateCard()
+
+  // this.fade()
+ 
   console.log(this.index);
+  
 }
 
 
+
+private delay(ms: number)
+{
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
+ 
+
+fade(){
+
+
+  (async () => { 
+    // Do something before delay
+    
+   await this.delay(3000);
+
+    // Do something after
+   
+
+  })();
+
+}
+ 
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
 

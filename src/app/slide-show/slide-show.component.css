@@ -20,6 +20,49 @@
   border-style: solid;
   overflow: auto;
 
+
+
+}
+.fadeIn{
+
+
+animation: fadein 2s;
+-moz-animation: fadein 2s; /* Firefox */
+-webkit-animation: fadein 2s; /* Safari and Chrome */
+-o-animation: fadein 2s; 
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
 #cardLogo{
@@ -53,14 +96,17 @@ border-radius: 4em;
   box-shadow: none;
   
   border-width: 0px;
-
+  top:-20em;
+  opacity: 0.6;
+  transition: 0.3s;
 
 }
+
+.arrow:hover{opacity: 1}
 
 .arrow.left{
 
   left:-3.5em;
-  top:-15em;
    position: relative;
   
   }
@@ -68,8 +114,7 @@ border-radius: 4em;
   .arrow.right{
 
     left:47.5em;
-    top:-15em;
-     position: relative;
+      position: relative;
     
     }
 .arrow svg{
@@ -81,4 +126,22 @@ border-radius: 4em;
    stroke-linejoin : round;
 }
 
+.dependentList
+{
+ 
+   -webkit-column-count: 2; /* Chrome, Safari, Opera */
+   -moz-column-count: 2; /* Firefox */
+   column-count: 2;
+   height: 5em;
+    }
+   
+ .dependent{
 
+  display: inline;
+ }
+ .cardIndex{
+   margin: 0px auto;
+  font-family: "Univers Next W01","Univers Regular","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+ color: #0072a7;
+  width: fit-content;
+ }

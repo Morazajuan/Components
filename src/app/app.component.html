@@ -1,3 +1,30 @@
+<app-nav-bar></app-nav-bar>
+<h1> Welcome to the Member ID Slider</h1>
+
+<div class="entryContainer" *ngIf="!isOn">
+<!-- Go to slider -->
+<div class="slider" >
+
+  <div>
+      <button (click)="isOn= true" >Go to Card Slider</button>
+
+
+
+  </div>
+</div>
+
+<!-- Add new member to Slider -->
+<div class="addCard">
+<div>
+
+
+  <button >Add new Card</button>
+
+</div>
+
+
+</div>
  
-<app-heading> </app-heading>
-<app-slide-show></app-slide-show>
+
+</div>
+<app-slide-show *ngIf="isOn"></app-slide-show>

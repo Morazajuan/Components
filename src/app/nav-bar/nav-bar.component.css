@@ -1,0 +1,20 @@
+#nav{
+
+    width: 100%;
+    height: auto;
+    background-color:  #0072a7;
+    color: white;
+}
+
+#home{
+background-color: #0072a7;
+    padding: 1em 2em;
+    width: fit-content;
+    color: white;
+}
+
+#home:hover{
+
+    background-color: #4b86a1;
+
+}

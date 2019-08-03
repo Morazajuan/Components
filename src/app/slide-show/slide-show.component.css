@@ -67,9 +67,9 @@ animation: fadein 2s;
 
 #cardLogo{
 
-  width: 21em;
-  margin: 1em 2em;
-  height: auto;
+  max-width: 5em;
+  margin: 1em 3em;
+  max-height: 6em;
 }
 .oneThird{
   margin: 0px 2em;

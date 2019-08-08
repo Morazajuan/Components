@@ -32,3 +32,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Pagination Code */
+.ant-pagination{
+
+  width: fit-content;
+  margin: 0 auto !important;
+}

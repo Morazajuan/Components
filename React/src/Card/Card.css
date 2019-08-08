@@ -1,32 +1,6 @@
-#slideshowContainer {
-    width: 50em;
-    margin: 0 auto 0 auto;
-      position: relative;
-      padding: 0;
-      z-index: 1000;
-    }
-    #slideshowContainer #slideshow {
-      
-      position: relative;
-    }
-  
-  #card{
-  
-    width: 50em;
-    background-color: #f8f8f8;
-     border-radius: 1em;
-    border-width: 3px;
-    border-color: #0072a7;
-    border-style: solid;
-    overflow: auto;
-  
-  
-  
-  }
-  .fadeIn{
-  
-  
-  animation: fadein 2s;
+
+    .fadeIn{
+      animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
   -o-animation: fadein 2s; 
@@ -64,19 +38,47 @@
         opacity: 1;
     }
   }
+  #slideshowContainer {
+    width: 50em;
+    margin: 0 auto 0 auto;
+      position: relative;
+      padding: 0;
+      z-index: 1000;
+    }
+    #slideshowContainer #slideshow {
+      
+      position: relative;
+    }
+ 
+  #card{
+    margin: 0 auto;
+
+    width: 40em;
+    min-height: 15em;
+    background-color: #f8f8f8;
+    border-radius: 1em;
+    border-width: 3px;
+    border-color: #0072a7;
+    border-style: solid;
+    overflow: auto; 
+  }
+
+  
   
   #cardLogo{
-  
-    max-width: 5em;
+
+    max-width: 20em;
+    min-width: 5em;
     margin: 1em 3em;
-    max-height: 6em;
+   
+    max-height: 8em;
   }
   .oneThird{
     margin: 0px 2em;
     overflow: auto;
   }
   .innerHalfSection{
-    width: 20em;
+    width: 15.5em;
     margin: 0px 1em;
     border-top: 1px;
     border-left:  0px;

@@ -3,62 +3,72 @@
  import ReactDOM from 'react-dom';
 // Components
 import Card from './Card/Card.js';
-import Slider from './Carousel/Carousel.js';
+import Navbar from './Navbar/Navbar.js'
+import Welcome from './Welcome/Welcome.js'
+import AddCard from './AddCard/AddCard.js'
+
  //Files
 import myJson from './Files/data.json';
 import 'antd/dist/antd.css';
-import {  Pagination } from 'antd';
+import {  Pagination, Button } from 'antd';
 
-
+//List of people in the JSON file
 let jsonLength =Object.keys(myJson ).length 
+// Starting default index 
 let index = 2;
 
-let member;
-
-member = myJson[index];
-
-// function onChange(pageNumber) {
-// index = pageNumber; 
-
-// member = myJson[index-1];
-// console.log(index);
-// console.log(member.name);
  
-// }
-
-
 class App extends Component {
-  
+  index =1
   state = {
-    person: [myJson[index]]
+    person: myJson[index ],
+    tab:"home",
+   
   }
 
-  switchPersonHandler(){
-
+  switchPersonHandler=(pageNumber)=>{
+   
+   //subtract one because index counts zero and pagination starts from one
+    index = pageNumber-1
+   
+    //change current person from State
     this.setState({
       person: myJson[index]
-    })
-    console.log(this.state.person.name)
-
+    })    
   }
-   onChange (pageNumber){
-  index = pageNumber; 
+ 
 
-  member = myJson[index-1];
-  console.log(index);
-  console.log(member.name);
-  this.switchPersonHandler();
-   
+  switchTabHandler =(newTab)=>{
+    
+ this.setState({tab: newTab})
  }
 
 render(){
   return (
     <React.Fragment>
-     
-    <Card    person={this.state.person}  ></Card>
+      <Navbar tabClick={this.switchTabHandler  } ></Navbar>
 
-    <Pagination showQuickJumper defaultPageSize={1} 
- defaultCurrent={2} total={ jsonLength} onChange={this.onChange}/>
+    {/* If Press Home */}
+      {this.state.tab === "home"?  
+        <Welcome></Welcome>
+       :null}
+
+    {/* If pressed Slider tab */}
+       {this.state.tab === "slider" ?
+         <div>
+
+<Card    person={this.state.person}  ></Card>
+<Pagination showQuickJumper defaultPageSize={1} 
+defaultCurrent={2} total={ jsonLength} onChange={this.switchPersonHandler }/>
+      </div> :null }
+     
+     
+     {/* If pressed AddCard tab */}
+    
+     {this.state.tab === "addCard"?  
+    <AddCard person={this.state.person} ></AddCard>
+    :null}
+    
 
 
       </React.Fragment>

@@ -1,0 +1,161 @@
+
+    .fadeIn{
+        animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; 
+    }
+    
+    @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-moz-keyframes fadein { /* Firefox */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-webkit-keyframes fadein { /* Safari and Chrome */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+    }
+    @-o-keyframes fadein { /* Opera */
+      from {
+          opacity:0;
+      }
+      to {
+          opacity: 1;
+      }
+    }
+    #slideshowContainer {
+      width: 50em;
+      margin: 0 auto 0 auto;
+        position: relative;
+        padding: 0;
+        z-index: 1000;
+      }
+      #slideshowContainer #slideshow {
+        
+        position: relative;
+      }
+   
+    #card{
+      margin: 0 auto;
+  
+      width: 40em;
+      min-height: 15em;
+      background-color: #f8f8f8;
+      border-radius: 1em;
+      border-width: 3px;
+      border-color: #0072a7;
+      border-style: solid;
+      overflow: auto; 
+    }
+  
+    
+    
+    #cardLogo{
+  
+      max-width: 20em;
+      min-width: 5em;
+      margin: 1em 3em;
+     
+      max-height: 8em;
+    }
+    .oneThird{
+      margin: 0px 2em;
+      overflow: auto;
+    }
+    .innerHalfSection{
+      width: 15.5em;
+      margin: 0px 1em;
+      border-top: 1px;
+      border-left:  0px;
+      border-bottom: 0px;
+      border-right: 0px;
+      border-style: solid;
+      border-color: #0072a7;
+    
+      float: left;
+    }
+    
+    .arrow{
+    background: #0072a7;
+    border-radius: 4em;
+      width: 3em;
+      height: 3em;
+      box-shadow: none;
+      
+      border-width: 0px;
+      top:-20em;
+      opacity: 0.6;
+      transition: 0.3s;
+    
+    }
+    
+    .arrow:hover{opacity: 1}
+    
+    .arrow.left{
+    
+      left:-3.5em;
+       position: relative;
+      
+      }
+      
+      .arrow.right{
+    
+        left:47.5em;
+          position: relative;
+        
+        }
+    .arrow svg{
+      widows: 2em;
+      stroke-width : 4;
+      height: 2em;
+      stroke: white;
+      stroke-linecap:round;
+       stroke-linejoin : round;
+    }
+    
+    .dependentList
+    {
+     
+       -webkit-column-count: 2; /* Chrome, Safari, Opera */
+       -moz-column-count: 2; /* Firefox */
+       column-count: 2;
+       height: 5em;
+        }
+       
+     .dependent{
+    
+      display: inline;
+     }
+     .cardIndex{
+       margin: 0px auto;
+      font-family: "Univers Next W01","Univers Regular","Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+     color: #0072a7;
+      width: fit-content;
+     }
+  
+     /* Ant components */
+  
+     /* Carosule */
+     /* For demo */
+   .slick-active button{
+     background:  #0072a7 !important;
+   }
+   .slick-dots button {
+  
+    background: gray !important;
+   }

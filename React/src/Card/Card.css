@@ -51,7 +51,7 @@
     }
  
   #card{
-    margin: 0 auto;
+    margin: 1em auto;
 
     width: 40em;
     min-height: 15em;

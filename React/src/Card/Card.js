@@ -44,7 +44,7 @@ class Card extends Component {
                 <div className="innerHalfSection">
                   <p>Group No. <b>{this.props.person.groupNo}</b></p>
                   <p>BIN <b>{this.props.person.bin}</b></p>
-                  <p>Benegit Plam <b>{this.props.person.benPla}</b> </p>
+                  <p>Benefit Plan  <b>{this.props.person.benPla}</b> </p>
                   <p>Effective Date <b>{this.props.person.effDate}</b></p>
   
                 </div>

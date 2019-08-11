@@ -1,6 +1,5 @@
-# Card Slider
+# Slider Component in React
 
-
-
-![](demo.gif)
-
+### For this component you will have to run
+### npm install
+### npm install browserify-fs 

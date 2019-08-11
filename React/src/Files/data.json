@@ -18,9 +18,9 @@
 
   },
   {
-    "name": "Warren",
+    "name": "Marilyn",
     "id": 5677,
-    "dependents":["Kid1","Kid2"],
+    "dependents":["Kid1","Kid2","Kid3","Kid4","Kid5","Kid6"],
     "groupNo": 2356,
     "bin": 345,
     "benPla": "HIOPT",
@@ -35,7 +35,7 @@
   {
     "name": "Jose",
     "id": 34324,
-    "dependents":["Kid1","Kid2","kid3","kid4","kid5","kid6"],
+    "dependents":["Kid1","Kid2","kid3" ],
     "groupNo": 454,
     "bin": 345,
     "benPla": "HIOPT",
@@ -61,5 +61,35 @@
     "sc": 56,
     "emergency":54,
     "dedu": 34
+  },
+  {
+    "name": "Zain",
+    "id": 775,
+    "dependents":["Jon","Kid2","Kid3","Kid4","Kid5","Kid6"],
+    "groupNo": 657,
+    "bin": 45,
+    "benPla": "HIOPT",
+    "effDate": "01/10/2343",
+    "plan": "PPO",
+
+    "ov": 45,
+    "sc": 56,
+    "emergency":54,
+    "dedu": 34
+  },
+  {
+    "name": "eric",
+    "id": 775,
+    "dependents":["Jon","Kid2","Kid3","Kid4","Kid5","Kid6"],
+    "groupNo": 657,
+    "bin": 45,
+    "benPla": "HIOPT",
+    "effDate": "01/10/2343",
+    "plan": "PPO",
+
+    "ov": 45,
+    "sc": 56,
+    "emergency":54,
+    "dedu": 34
   }
-  ]
+]

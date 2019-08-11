@@ -18,9 +18,9 @@
 
       },
       {
-        "name": "Warren",
+        "name": "Marilyn",
         "id": 5677,
-        "dependents":["Kid1","Kid2"],
+        "dependents":["Kid1","Kid2","Kid3","Kid4","Kid5","Kid6"],
         "groupNo": 2356,
         "bin": 345,
         "benPla": "HIOPT",

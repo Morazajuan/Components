@@ -1,17 +1,14 @@
 import { Menu, Icon } from 'antd';
 import React, {Component,} from 'react';
 import './Navbar.css';
-const { SubMenu } = Menu;
-
+ 
 class Navbar extends  Component {
   state = {
     current: 'home',
   };
 
   handleClick = e => {
-    // console.log('click ', e.key);
-    
-    //return key value to {Parrent componetnt}
+ 
     this.setState({
       current: e.key,
     });
